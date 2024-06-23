@@ -10,7 +10,7 @@
 - Sarah Klock Mauricio
 
 ## Sobre o Projeto
-Este repositório contém os notebooks e dados para um projeto de classificação de letras usando redes neurais do tipo Multilayer Perceptron (MLP). O projeto foi desenvolvido como parte do curso de Inteligência Artificial na Universidade [Nome da Universidade], com o objetivo de explorar e visualizar o comportamento de redes neurais em tarefas de classificação simples.
+Este repositório contém os notebooks e dados para um projeto de classificação de letras usando redes neurais do tipo Multilayer Perceptron (MLP). O projeto foi desenvolvido como parte do curso de Inteligência Artificial na Universidade de São Paulo (USP), com o objetivo de explorar e visualizar o comportamento de redes neurais em tarefas de classificação simples.
 
 ## Estrutura do Repositório
 - **ep_ia_mlp.ipynb**: Implementação do MLP.
