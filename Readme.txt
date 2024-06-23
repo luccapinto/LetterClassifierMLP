@@ -1,36 +1,46 @@
-Integrantes:
-- Ana Clara das Neves Barreto - 13672540
-- Eloisa Antero Guisse - 13781924
-- Marcos Martins de Oliveira Pacheco - 13672602
-- Jamyle Gonçalves Rodrigues Silva - 13672338
-- Lucca Pinto - 13781991 
-- Sarah Klock Mauricio - 13673131
 
-Descrição de cada arquivo:
+# Projeto de Reconhecimento de Letras com MLP
 
-- ep_ia_mlp.ipynb: contém o notebook com a implementação do MLP de fato.
+## Integrantes
+- Ana Clara das Neves Barreto
+- Eloisa Antero Guisse
+- Jamyle Gonçalves Rodrigues Silva
+- Lucca Pinto
+- Marcos Martins de Oliveira Pacheco
+- Sarah Klock Mauricio
 
-- analises.ipynb: contém o notebook com gráficos gerados para análise do MLP.
+## Sobre o Projeto
+Este repositório contém os notebooks e dados para um projeto de classificação de letras usando redes neurais do tipo Multilayer Perceptron (MLP). O projeto foi desenvolvido como parte do curso de Inteligência Artificial na Universidade [Nome da Universidade], com o objetivo de explorar e visualizar o comportamento de redes neurais em tarefas de classificação simples.
 
-- pesos_salvos.txt: contém um JSON que pode ser usado pelo método build_mlp() para construir as camadas 
-  de um MLP sem a necessidade de treiná-lo novamente, junto com a lista de erros de treinamento e validação 
-  por época registrados no treinamento do modelo e o conjunto de dados de teste que não foram usados no 
-  treinamento.
+## Estrutura do Repositório
+- **ep_ia_mlp.ipynb**: Implementação do MLP.
+- **analises.ipynb**: Análise dos resultados do modelo.
+- **pesos_salvos.txt**: Pesos salvos do MLP, utilizáveis sem necessidade de re-treino.
+- **X.txt**: Dados de entrada para treino e teste.
+- **Y_letra.txt**: Classes correspondentes aos dados de entrada.
+- **csvs**:
+  - **grid_search_results.csv**: Resultados de grid search para hiperparâmetros.
+  - **com_dois.csv**: Dados com inicialização Xavier e momentum.
+  - **com_momentum.csv**: Dados com momentum, sem Xavier.
+  - **com_xavier.csv**: Dados com Xavier, sem momentum.
+  - **sem_nada.csv**: Dados sem Xavier e sem momentum.
+  - **learning_rates.csv**: Dados variando taxas de aprendizado.
+  - **proporcao_conjunto_teste.csv**: Dados variando proporções do conjunto de teste.
 
-- X.txt: contém os dados de entrada que usamos para treinar e testar o modelo.
+## Instalação
+Para configurar seu ambiente para executar os notebooks, siga estas instruções:
+1. Clone o repositório.
+2. Instale as dependências usando `pip install -r requirements.txt`.
 
-- Y_letra.txt: contém as classes dos dados de entrada.
+## Como Usar
+Para utilizar os notebooks, simplesmente execute cada célula em ordem. Os notebooks estão comentados para facilitar o entendimento de cada passo do processo de treinamento e análise.
 
-- csvs: pasta que contém arquivos .csv gerados para a construção dos gráficos de análise.
+## Contribuições
+Contribuições são bem-vindas! Se deseja contribuir, por favor:
+- Faça um fork do repositório.
+- Crie um branch para suas modificações.
+- Envie um pull request detalhando as mudanças propostas.
 
-  - grid_search_results.csv: arquivo com a saída do primeiro grid search, que testou diversas combinações
-    de hiperparâmetros e retornou a acurácia, erro médio, desvio padrão do erro e lista de erros de treinamento
-    e validação por época de todos os modelos testados. 
-  - com_dois.csv: arquivo com os dados de um treinamento do MLP com a implementação da inicialização Xavier e momentum.
-  - com_momentum.csv: arquivo com os dados de um treinamento do MLP sem a inicialização Xavier, mas com momentum.
-  - com_xavier.csv: arquivo com os dados de um treinamento do MLP com a inicialização Xavier, mas sem momentum.
-  - sem_nada.csv: arquivo com os dados de um treinamento do MLP sem inicialização Xavier e sem momentum.
-  - learning_rates.csv: arquivo com a saída de diversos testes do MLP com taxas de aprendizado diferentes.
-  - proporcao_conjunto_teste.csv: arquivo com a saída de diversos testes do MLP para proporções de conjunto de testes diferentes.
+## Licença
+Este projeto está disponível sob a Licença MIT. Veja o arquivo `LICENSE.txt` para mais detalhes.
 
-  
