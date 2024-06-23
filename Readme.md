@@ -41,6 +41,3 @@ Contribuições são bem-vindas! Se deseja contribuir, por favor:
 - Crie um branch para suas modificações.
 - Envie um pull request detalhando as mudanças propostas.
 
-## Licença
-Este projeto está disponível sob a Licença MIT. Veja o arquivo `LICENSE.txt` para mais detalhes.
-
